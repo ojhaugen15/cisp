@@ -4,8 +4,8 @@ page_width
 notes_string
 
 :extractMusic
-:a searchIndex :reasonableStart;
-:a searchEnd :widthLimit;
+:a searchIndex :widthLimit;
+:a searchEnd :reasonableStart;
 :a end2 :heightLimit;
 :a index2 :reasonableStart;
 :a blackPortion 0
@@ -33,8 +33,8 @@ notes_string
 ::::::a countPortions 0
 ::::a previousPortion blackPortion
 ::::a blackPortion 0
-:::a searchIndex :addNumbers searchIndex 1; 
-::a searchIndex :addNumbers searchIndex 1;
+:::a index2 :addNumbers index2 1; 
+::a searchIndex :differenceNumbers searchIndex 1;
 :orderNotes
 :e notes_string
 
@@ -44,7 +44,6 @@ notes_string
 :orderNotes
 :
 
-// simple functions to fill in . . .
 
 :alreadyFound yTop
 :
